@@ -13,25 +13,20 @@ const Main = () => {
 				</div>
 				<div className="main-right">
 					<p>
-						There’s a problem for people who are looking to get their trade license have time constraints
-						and access to quality training that prevent them from a path to state licensure. This problem is
-						highlighted in urban communities where they tend to work longer hours and juggle multiple
-						responsibilities at home.
+						Modern and efficient infrastructure is foundational to ensuring communities have economic
+						opportunities well into the future. And yet, across the United States, one can find communities
+						with more infrastructure projects that need to be undertaken than their local community has
+						funds and resources.
 					</p>
 					<p>
-						By eliminating the lack of resources and opportunities problems that people in communities have,
-						ReVitalize will give people who are seeking state licenses access to education and employment.
+						Enter ReVitalize, a crowdsourcing & crowdfunding platform dedicated to serving stakeholders
+						interested in rejuvenating their community as well as trade professionals & apprentices who are
+						ready, willing, and able.
 					</p>
 					<p>
-						ReVitalize uses a model, where students enter contracts with ReVitalize, to establish a pathway
-						for them to obtain the resources and time necessary to become a self-sufficient and prospering
-						trades professional. The resources shortfall include not only education and work opportunities
-						created through the application, but also the ability to pay for life's general necessities.
-						ReVitalize will be able to take care of some of these resources problems.
-					</p>
-					<p>
-						By creating a platform and business model around providing time and access to join projects and
-						build a professional trades career, ReVitalize reduces some of the barriers for their students.
+						ReVitalize allows users to participate in community projects in a number of ways, whether they
+						want to create a project and raise funds, donate, organize available resources, or volunteer
+						based on their availability and desired skillset.
 					</p>
 				</div>
 			</div>
