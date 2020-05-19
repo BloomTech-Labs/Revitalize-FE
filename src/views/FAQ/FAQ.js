@@ -12,13 +12,13 @@ function FAQ() {
 				<h2>Frequently Asked Questions</h2>
 				<Accordion
 					title="What is ReVitalize?"
-					content="A modern approach to building your community, ReVitalize is a crowdfunding platform that creates apprenticeship opportunities to develop your skills to gain licensing."
+					content="<p>A modern approach to building your community, ReVitalize is a crowdfunding platform that creates apprenticeship opportunities to develop your skills to gain licensing.</p>"
 				/>
 				<Accordion
 					title="How do I get involved?"
 					content="<p>First you are going to want to register with ReVitalize. 
 					Once you've registered you have two options, one is to browse projects and find one you want to join. 
-					Once you have been accepted to a project you are now an Apprentice. The otehr option is"
+					Once you have been accepted to a project you are now an Apprentice. The other option is to start your own project, which will make you a Project Manager.</p>"
 				/>
 				<Accordion
 					title="Can I use a custom domain?"
