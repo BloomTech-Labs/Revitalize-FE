@@ -7,12 +7,13 @@
     margin: 0 auto;
     padding: 0 35px;
     section {
-        margin: 40px auto;
+        margin: 15px 5px; // spacing around project card
     }
     .browse-all-project-card-container {
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
         grid-gap: 1rem;
+        
     }
     .browse-all-project-card-container > section {
         // padding: 1.5rem;
@@ -23,6 +24,7 @@
 .dark-mode {
     .browse-all-container {
         color: $snow-white;
+        background-color: $bleached-black;
     }
 }
 
@@ -46,6 +48,6 @@
 //     display: grid;
 //     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
 //     grid-template-rows: auto;
-//     grid-template-areas: 
+//     grid-template-areas:
 //         "project-card project-card project-card project-card";
 //   }

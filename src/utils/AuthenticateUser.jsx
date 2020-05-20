@@ -16,6 +16,7 @@ class AuthenticateUser extends React.Component {
             this.props.history.push("/login");
         }
         else {
+            console.log(token)
             localStorage.setItem("token", token)
             this.props.history.push("/");
         }

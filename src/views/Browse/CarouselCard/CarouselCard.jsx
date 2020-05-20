@@ -109,8 +109,8 @@ const CarouselCard = props => {
 						likeState.liked ? (
 							<FaHeart fill="#d2405b" onClick={e => toggleLiked(e, 'unlike')} />
 						) : (
-							<FaRegHeart onClick={e => toggleLiked(e, 'like')} />
-						)
+								<FaRegHeart onClick={e => toggleLiked(e, 'like')} />
+							)
 					) : null}
 					<img src={card.featuredImage} alt={card.name} />
 					<div className="after"></div>
@@ -150,7 +150,7 @@ const CarouselCard = props => {
 				<div className="carousel-card-body">
 					<div className="carousel-card-body-descript">
 						<Link to={`/project/${card.slug}`}>
-							<h5>{card.name}</h5>
+							<h5 className="carousel-card-header">{card.name}</h5>
 						</Link>
 						<Truncate lines={3} ellipsis={`...`}>
 							{card.description}

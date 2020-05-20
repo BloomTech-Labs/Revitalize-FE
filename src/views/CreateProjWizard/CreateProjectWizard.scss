@@ -2,17 +2,7 @@
 @import './Form2/Form2.scss';
 @import './Form3/Form3.scss';
 
-.create-project-wizard-container {
-	// background-image: url('../assets/CreateProjWizard/RocketManGradient.png');
-	// background-size: cover;
-	// background-repeat: no-repeat;
-	// height: 100vh;
-	// min-height: 1000px;
-	// background-color: $franks-grey;
-	height: 100%;
-	margin: 0 auto;
 
-	padding: 20px 20px;
 	.errorText {
 		color: red;
 	}
@@ -31,14 +21,16 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		padding: 60px 0;
+		padding: 0;
+		margin-bottom: 50px;
+		min-height: 935px;
 		.form-plus-quote-container {
 			@include cardBoxShadow;
 			background-color: $chillFi-purple;
 			display: flex;
 			justify-content: space-around;
 			width: 100%;
-			height: 100%;
+			height: 935px;
 			max-width: 1200px;
 			position: relative;
 			z-index: 5;
@@ -155,9 +147,30 @@
 
 					.form-navigation {
 						display: flex;
+						height:100px;
 						justify-content: space-between;
 						.prev-step {
 							order: -1;
+							margin:20px;
+						}
+						.prev-step2 { //added for debug purposes
+							order: -1;
+							margin:20px;
+							position: relative;
+							top: 100px;
+						}
+						.next-step{
+							margin:20px;
+						}
+						.next-step2{ //added for debug purposes
+							margin:20px;
+							position: relative;
+							top: 100px;
+						}
+						.next-step3{ //added for debug purposes
+							margin:20px;
+							position: relative;
+							top: 40px;
 						}
 						button {
 							width: unset;
@@ -167,6 +180,7 @@
 						}
 						button.submit {
 							background-color: $mutant-turtle;
+							margin:20px;
 						}
 					}
 					.form-navigation.first-step {
@@ -192,12 +206,25 @@
 			}
 		}
 	}
-}
+
 
 .dark-mode {
+	// .title{
+	// 	color: $dark-blue-gray;
+	// }
+	.create-project-wizard-container {
+		.create-project {
+
+			.form-plus-quote-container {
+				.ui-section {
+					background-color: $darkness;
+				}
+			}
+		}
+	}
 	.form-plus-quote-container {
 		.ui-section {
-			background-color: #152531;
+			background-color: $bleached-black;
 		}
 	}
 }
