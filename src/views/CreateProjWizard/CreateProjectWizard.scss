@@ -76,6 +76,7 @@
 				background-color: $snow-white;
 				width: 65%;
 
+
 				@media #{$tablet} {
 					width: 100%;
 				}
@@ -195,9 +196,21 @@
 }
 
 .dark-mode {
+	// .title{
+	// 	color: $dark-blue-gray;
+	// }
+	.create-project-wizard-container{
+		.create-project{
+			.form-plus-quote-container{
+				.ui-section{
+					background-color: $darkness;
+				}
+			}
+		}
+	}
 	.form-plus-quote-container {
 		.ui-section {
-			background-color: #152531;
+			background-color: $bleached-black;
 		}
 	}
 }

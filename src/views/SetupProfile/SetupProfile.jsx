@@ -28,7 +28,11 @@ const SetupProfile = props => {
         zip: "",
         country: "USA",
     });
-    const [darkModeState, setDarkMode] = useState(false);
+    // const [darkModeState, setDarkMode] = useState(JSON.parse(localStorage.getItem('dark-mode')));
+    // if(darkModeState === null){
+    //   setDarkMode(false);
+    // }
+
 
     const handleChanges = event => {
         if (event.target.name === 'zip' || event.target.name === 'goalAmount') {
@@ -51,18 +55,25 @@ const SetupProfile = props => {
 		}
     };
 
-    const toggleDarkMode = () => {
-		setDarkMode(!darkModeState);
-		localStorage.setItem('dark-mode', !darkModeState);
-    };
+    // const toggleDarkMode = () => {
+    //   console.log("settings toggle dark mode value before:", darkModeState);
+  	// 	setDarkMode(!darkModeState);
+  	// 	localStorage.setItem('dark-mode', !darkModeState);
+    //   if (JSON.parse(localStorage.getItem('dark-mode')) === true) {
+  	// 		document.querySelector('body').classList.add('dark-mode');
+  	// 	} else {
+  	// 		document.querySelector('body').classList.remove('dark-mode');
+  	// 	}
+    //   console.log("settings toggle dark mode value after:", darkModeState);
+    // };
 
-    useEffect(() => {
-		if (JSON.parse(localStorage.getItem('dark-mode')) === true) {
-			document.querySelector('body').classList.add('dark-mode');
-		} else {
-			document.querySelector('body').classList.remove('dark-mode');
-		}
-	}, [darkModeState]);
+  //   useEffect(() => {
+	// 	if (JSON.parse(localStorage.getItem('dark-mode')) === true) {
+	// 		document.querySelector('body').classList.add('dark-mode');
+	// 	} else {
+	// 		document.querySelector('body').classList.remove('dark-mode');
+	// 	}
+	// }, [darkModeState]);
 
     if (loading) return <h1>Loading</h1>
     if (!localStorage.getItem("token")) props.history.push("/");
@@ -96,18 +107,15 @@ const SetupProfile = props => {
                         <>
                             <div className="setup-profile-form">
                                 <div className="setup-profile-heading-container">
-                                    <div className="setup-profile-heading">{props.destination === "settings" ? "Settings" : "Hello!"}</div>
+                                    <div className="setup-profile-heading">{props.destination === "settings" ? "Update Info" : "Hello!"}</div>
                                 </div>
                                 {props.destination === "settings" ? (
                                     <div className="setup-profile-settings-options">
                                         <div className="setting-label">
-                                            <FaMoon />&nbsp; Toggle Dark Mode
+
                                         </div>
                                         <div className="setting-toggle">
-                                            <Toggle
-                                                defaultChecked={darkModeState}
-                                                onChange={toggleDarkMode}
-                                            />
+
                                         </div>
                                     </div>
                                 ) : null}
@@ -180,7 +188,7 @@ const SetupProfile = props => {
                                             placeholder="State"
                                             value={profileData.state}
                                             onChange={handleChanges}
-                                        />
+                                        /> {" "}{' '}{' '}
                                         <input
                                             name="zip"
                                             type="text"
@@ -211,4 +219,3 @@ const SetupProfile = props => {
 
 
 export default  withRouter(SetupProfile);
-
