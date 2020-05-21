@@ -15,7 +15,7 @@
 		justify-content: space-around;
 		margin: 0 auto;
 		width: 80%;
-		max-width: 1400px;
+    	max-width: 1400px;
 		@media (max-width: '750px') {
 			flex-direction: column;
 			text-align: center;
@@ -85,9 +85,10 @@
 		.links-container {
 			li {
 				a {
-					color: $dark-electric-blue;
+					color: $dark-electric-blue;		
 				}
 			}
+
 		}
 		.social-links-container {
 			a {

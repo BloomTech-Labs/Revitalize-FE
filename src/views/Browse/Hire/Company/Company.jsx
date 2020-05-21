@@ -5,8 +5,8 @@ const Company = props => {
 	return (
 		<a className="companyContainer" style={{ backgroundImage: `url(${image})` }} href={link}>
 			<div className="logoContainer">
-				<img className="logo" src={logo} alt="logo" />
-				<img src={paintbrush} alt="paintbrush" />
+				<img className="logo" src={image} alt="logo" />
+				{/* <img src={paintbrush} alt="paintbrush" /> */}
 			</div>
 		</a>
 	);
