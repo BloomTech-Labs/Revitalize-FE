@@ -58,6 +58,7 @@
 			}
 		}
 	}
+<<<<<<< HEAD
 
 
 .dark-mode {
@@ -71,6 +72,26 @@
         .dashboard-section-inner-container {
         	@include skeleton-section-dark;
         	@include bottomBoxShadowDark;
+=======
+}
+    .dashboard-container {
+        background-color: $bleached-black;
+        .dashboard {
+            .section[class^='dashboard'] {
+                background-color: $darkness;
+                border: none;
+                border-bottom-color: $bleached-black;
+                border-bottom-style: solid;
+                border-bottom-width: 3px;
+                .dashboard-section-inner-container {
+                    @include skeleton-section-dark;
+                    @include bottomBoxShadowDark;
+                }
+            }
+            hr {
+                border-top-color: rgba(255, 255, 255, 0.18);
+            }
+>>>>>>> 3e6defb85fbe94cca7cd4d545372595b20ad7c8c
         }
       }
         hr {

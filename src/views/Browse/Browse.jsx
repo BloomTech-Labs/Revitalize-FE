@@ -9,7 +9,7 @@ import RecommendedProjects from './RecommendedProjects/RecommendedProjects';
 import NearYou from './NearYou/NearYou';
 import CreateProject from './CreateProject/CreateProject';
 import Noteworthy from './Noteworthy/Noteworthy';
-import Hire from './Hire/Hire';
+import Hours from './Hire/Hire';
 
 const Start = () => {
 
@@ -22,8 +22,8 @@ const Start = () => {
 				<RecommendedProjects />
 				<CreateProject />
 				<NearYou />
+				<Hours />
 				<Noteworthy />
-				<Hire />
 			</div>
 			<Footer />
 		</>
