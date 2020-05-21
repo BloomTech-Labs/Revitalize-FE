@@ -1,4 +1,4 @@
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import Chevron from './Chevron';
 
 import './Accordion.scss';
@@ -18,10 +18,10 @@ function Accordion(props) {
 
 	return (
 		<div className="accordion__section">
-			<button className={`accordion ${setActive}`} onClick={toggleAccordion}>
+			<div className={`accordion ${setActive}`} onClick={toggleAccordion} id="accordion">
 				<p className="accordion__title">{props.title}</p>
 				<Chevron className={`${setRotate}`} width={10} fill={'#777'} />
-			</button>
+			</div>
 			<div ref={content} style={{ maxHeight: `${setHeight}` }} className="accordion__content">
 				<div className="accordion__text" dangerouslySetInnerHTML={{ __html: props.content }} />
 			</div>
