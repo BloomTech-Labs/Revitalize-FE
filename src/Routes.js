@@ -14,7 +14,6 @@ import CreateProjectWizard from './views/CreateProjWizard/CreateProjectWizard';
 import ProjectPage from './views/ProjectPage/ProjectPage';
 import ProjectDonationPage from './views/ProjectDonationPage/ProjectDonationPage';
 import About from './views/About/About';
-import FAQ from './views/FAQ/FAQ';
 
 // Utils
 import AuthenticateUser from './utils/AuthenticateUser';
@@ -30,7 +29,6 @@ export const Routes = () => {
 			<Route exact path="/login" component={Login} />
 			<Route exact path="/oauth/:token" component={AuthenticateUser} />
 			<Route exact path="/about" component={About} />
-			<Route exact path="/faq" component={FAQ} />
 
 			{/* private routes */}
 			<Route

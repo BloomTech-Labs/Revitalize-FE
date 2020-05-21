@@ -4,16 +4,12 @@
 	flex-direction: column;
 	justify-content: flex-end;
 	padding: 15px;
-	height: 340px;
-	@media (max-width: '750px') {
-		height: 525px;
-	}
 	.links-container {
 		display: flex;
 		justify-content: space-around;
 		margin: 0 auto;
 		width: 80%;
-		max-width: 1400px;
+    	max-width: 1400px;
 		@media (max-width: '750px') {
 			flex-direction: column;
 			text-align: center;
@@ -76,9 +72,10 @@
 		.links-container {
 			li {
 				a {
-					color: $dark-electric-blue;
+					color: $dark-electric-blue;		
 				}
 			}
+
 		}
 		.social-links-container {
 			a {
